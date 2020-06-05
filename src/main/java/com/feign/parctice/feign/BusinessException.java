@@ -3,33 +3,26 @@ package com.feign.parctice.feign;
 public class BusinessException extends Exception {
 
 	private static final long serialVersionUID = 1809981444400466907L;
-
-	public BusinessException() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
-	public BusinessException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
-		// TODO Auto-generated constructor stub
-	}
-
-	public BusinessException(String message, Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}
-
-	public BusinessException(String message) {
-		super(message);
-		// TODO Auto-generated constructor stub
-	}
-
-	public BusinessException(Throwable cause) {
-		super(cause);
-		// TODO Auto-generated constructor stub
-	}
 	
+	private final int status;
 	
-	
+	private final String rason;
+
+
+	public BusinessException(String rason, int status) {
+		super(rason);
+		this.rason = rason;
+		this.status = status;
+	}
+
+
+	public int getStatus() {
+		return status;
+	}
+
+	public String getRason() {
+		return rason;
+	}
+
 
 }

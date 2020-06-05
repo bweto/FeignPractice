@@ -1,8 +1,5 @@
 placeholder:
   url: https://jsonplaceholder.typicode.com
-  
-#hystrix:
-#  shareSecurityContext: true
 
 logging:
   level:

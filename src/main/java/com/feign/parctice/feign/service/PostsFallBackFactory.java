@@ -11,5 +11,6 @@ public class PostsFallBackFactory implements FallbackFactory<Posts> {
 	public Posts create(Throwable cause) {
 		return new PostsFallBack(cause);
 	}
+	
 
 }
