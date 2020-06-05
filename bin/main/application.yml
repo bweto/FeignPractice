@@ -1,0 +1,15 @@
+placeholder:
+  url: https://jsonplaceholder.typicode.com
+  
+#hystrix:
+#  shareSecurityContext: true
+
+logging:
+  level:
+    com:
+      feign:
+        parctice:
+          feign:
+            service:
+              Posts: DEBUG
+server:  http2:    enabled: true
